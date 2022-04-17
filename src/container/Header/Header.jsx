@@ -27,13 +27,22 @@ const scaleVariants = {
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Mathema</h1>
+              <h1 className="head-text">Ebrima Konteh</h1>
             </div>
           </div>
   
           <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer</p>
-            <p className="p-text">Ux/Ui Designer</p>
+            <p className="p-text">Am a <span className="unicorn">Unicorn</span> designer</p>
+            {/* <p className="p-text">backend Developer</p> */}
+          </div>
+          <div className="tag-cmp app__flex">
+            <p className="p-text">The driving force of our current generation is technology.
+              
+             </p>
+          </div>
+          <div className="tag-cmp app__flex">
+            <p className="p-text"> Making a creative design for your products is a neccessity.
+             </p>
           </div>
         </div>
       </motion.div>
@@ -43,7 +52,7 @@ const scaleVariants = {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={images.profile} alt="profile_bg" />
+        <img src={images.profile} alt="profile_bg" className="profileImg" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: 'easeInOut' }}
@@ -58,7 +67,7 @@ const scaleVariants = {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[images.flutter, images.redux, images.sass].map((circle, index) => (
+        {[images.react, images.git, images.figma].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="profile_bg" />
           </div>
